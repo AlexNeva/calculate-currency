@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.min.css">
+  <title>Рассчитать курс валют</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    
+    <main class="main">
+      <section class="calculate">
+        <div class="calculate__container container">
+          <h1 class="calculate__title">
+            Калькулятор конвертации валют
+          </h1>
+          <form enctype="multipart/form-data" method="post" id="form" class="calculate__form form-calculate">
+            <div class="form-calculate__field">
+              <label for="sum">Сумма, руб</label>
+              <input type="text" id="sum" name="sum">
+            </div>
+            <div class="form-calculate__field">
+              <label for="currency">Валюта для конвертации</label>
+              <select name="currency" id="currency">
+                <option value="0">Выберите валюту</option>
+              </select>
+            </div>
+            <div class="form-calculate__field">
+              <label for="output">Сумма в валюте</label>
+              <input type="text" id="output" name="output" readonly>
+            </div>
+            <div class="form-calculate__field">
+              <label for="email">E-mail</label>
+              <input type="email" id="email" name="email">
+            </div>
+            <button type="submit" class="form-calculate__btn">Записаться на обмен валют</button>
+          </form>
+        </div>
+
+      </section>
+    </main>
+    
+  </div>
+  <script src="js/script.js"></script>
+  <!-- <script>
+
+  </script> -->
+</body>
+
+</html>
