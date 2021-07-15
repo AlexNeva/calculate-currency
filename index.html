@@ -21,21 +21,21 @@
           <form enctype="multipart/form-data" method="post" id="form" class="calculate__form form-calculate">
             <div class="form-calculate__field">
               <label for="sum">Сумма, руб</label>
-              <input type="text" id="sum" name="sum">
+              <input type="number" id="sum" min="0" name="sum" required>
             </div>
             <div class="form-calculate__field">
               <label for="currency">Валюта для конвертации</label>
-              <select name="currency" id="currency">
+              <select name="currency" id="currency" required>
                 <option value="0">Выберите валюту</option>
               </select>
             </div>
             <div class="form-calculate__field">
               <label for="output">Сумма в валюте</label>
-              <input type="text" id="output" name="output" readonly>
+              <input type="text" id="output" name="output" readonly required>
             </div>
             <div class="form-calculate__field">
               <label for="email">E-mail</label>
-              <input type="email" id="email" name="email">
+              <input type="email" id="email" name="email" required>
             </div>
             <button type="submit" class="form-calculate__btn">Записаться на обмен валют</button>
           </form>
